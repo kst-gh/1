@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1f1f1f, #4b2e1f, #d4af37);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #222;
+}
+
+.box {
+  width: 420px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 35px;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+  animation: fadeIn 0.6s ease;
+}
+
+h1 {
+  margin-top: 0;
+  color: #2b1b12;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  color: #8b6508;
+  margin-top: 25px;
+}
+
+p {
+  color: #555;
+  line-height: 1.6;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 15px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  background: linear-gradient(135deg, #d4af37, #8b5e3c);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(139, 94, 60, 0.4);
+}
+
+.logout {
+  background: linear-gradient(135deg, #333, #111);
+}
+
+a {
+  text-decoration: none;
+}
+
+#priceList,
+#goldTypeList,
+#staffList,
+#transactionList,
+#staffTransactionList {
+  background: #f8f6f0;
+  padding: 15px;
+  border-radius: 12px;
+  color: #333;
+  text-align: left;
+  border-left: 5px solid #d4af37;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

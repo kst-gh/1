@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Manager Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkPermission('manager')">
+
+<div class="box">
+  <h1>Manager Dashboard</h1>
+
+  <a href="gold-type.html">
+    <button>Create Gold Type</button>
+  </a>
+
+  <a href="gold-price.html">
+    <button>Adjust Gold Price</button>
+  </a>
+
+  <a href="manage-staff.html">
+    <button>Manage Staff Account</button>
+  </a>
+
+  <a href="transactions.html">
+    <button>View All Transactions</button>
+  </a>
+
+  <button class="logout" onclick="logout()">Logout</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Staff Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkPermission('staff'); showStaffTransactions()">
+
+<div class="box">
+
+  <h1>Staff Dashboard</h1>
+
+  <input type="text" id="customerName" placeholder="Customer Name">
+
+  <input type="text" id="customerIC" placeholder="Customer IC">
+
+  <input type="text" id="customerPhone" placeholder="Contact Number">
+
+  <input type="text" id="transactionGold" placeholder="Gold Type">
+
+  <input type="number" id="transactionAmount" placeholder="Amount RM">
+
+  <button onclick="createTransaction()">
+    Create Transaction
+  </button>
+
+  <a href="transactions.html">
+    <button>View Transactions</button>
+  </a>
+
+  <h3>My Transactions</h3>
+
+  <p id="staffTransactionList"></p>
+
+  <button class="logout" onclick="logout()">
+    Logout
+  </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

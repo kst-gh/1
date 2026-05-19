@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Manage Staff Account</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkPermission('manager'); showStaffAccounts()">
+
+<div class="box">
+  <h1>Manage Staff Account</h1>
+
+  <input type="text" id="staffName" placeholder="New Staff Username">
+  <input type="password" id="staffPass" placeholder="New Staff Password">
+
+  <button onclick="createStaff()">Create Staff</button>
+
+  <h3>Staff List</h3>
+  <p id="staffList"></p>
+
+  <a href="manager-dashboard.html">
+    <button class="logout">Back</button>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
