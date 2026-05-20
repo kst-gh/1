@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>All Transactions</title>
+  <title>Transactions</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body onload="checkTransactionPermission(); showTransactions()">
+<body
+onload="
+checkTransactionPermission();
+showTransactions()
+">
 
 <div class="box">
 
@@ -13,12 +17,22 @@
 
   <p id="transactionList"></p>
 
-  <a href="manager-dashboard.html" id="managerBack">
-    <button class="logout">Back to Manager</button>
+  <a
+    href="manager-dashboard.html"
+    id="managerBack"
+  >
+    <button class="logout">
+      Back to Manager
+    </button>
   </a>
 
-  <a href="staff-dashboard.html" id="staffBack">
-    <button class="logout">Back to Staff</button>
+  <a
+    href="staff-dashboard.html"
+    id="staffBack"
+  >
+    <button class="logout">
+      Back to Staff
+    </button>
   </a>
 
 </div>

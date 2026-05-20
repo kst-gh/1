@@ -4,21 +4,35 @@
   <title>Create Gold Type</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body onload="checkPermission('manager'); showGoldTypes()">
+
+<body
+onload="
+checkPermission('manager');
+showGoldTypes()
+">
 
 <div class="box">
+
   <h1>Create Gold Type</h1>
 
-  <input type="text" id="goldType" placeholder="Example: 916 Gold">
+  <input
+    type="text"
+    id="goldType"
+    placeholder="Example: 916 Gold"
+  >
 
-  <button onclick="addGoldType()">Add Gold Type</button>
+  <button onclick="addGoldType()">
+    Add Gold Type
+  </button>
 
   <h3>Gold Type List</h3>
+
   <p id="goldTypeList"></p>
 
   <a href="manager-dashboard.html">
     <button class="logout">Back</button>
   </a>
+
 </div>
 
 <script src="script.js"></script>

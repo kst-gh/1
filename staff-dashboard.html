@@ -5,21 +5,45 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body onload="checkPermission('staff'); showStaffTransactions()">
+<body
+onload="
+checkPermission('staff');
+showStaffTransactions()
+">
 
 <div class="box">
 
   <h1>Staff Dashboard</h1>
 
-  <input type="text" id="customerName" placeholder="Customer Name">
+  <input
+    type="text"
+    id="customerName"
+    placeholder="Customer Name"
+  >
 
-  <input type="text" id="customerIC" placeholder="Customer IC">
+  <input
+    type="text"
+    id="customerIC"
+    placeholder="Customer IC"
+  >
 
-  <input type="text" id="customerPhone" placeholder="Contact Number">
+  <input
+    type="text"
+    id="customerPhone"
+    placeholder="Contact Number"
+  >
 
-  <input type="text" id="transactionGold" placeholder="Gold Type">
+  <input
+    type="text"
+    id="transactionGold"
+    placeholder="Gold Type"
+  >
 
-  <input type="number" id="transactionAmount" placeholder="Amount RM">
+  <input
+    type="number"
+    id="transactionAmount"
+    placeholder="Amount RM"
+  >
 
   <button onclick="createTransaction()">
     Create Transaction
@@ -33,7 +57,10 @@
 
   <p id="staffTransactionList"></p>
 
-  <button class="logout" onclick="logout()">
+  <button
+    class="logout"
+    onclick="logout()"
+  >
     Logout
   </button>
 

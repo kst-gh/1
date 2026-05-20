@@ -4,22 +4,41 @@
   <title>Adjust Gold Price</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body onload="checkPermission('manager'); showGoldPrices()">
+
+<body
+onload="
+checkPermission('manager');
+showGoldPrices()
+">
 
 <div class="box">
+
   <h1>Adjust Gold Price</h1>
 
-  <input type="text" id="goldName" placeholder="Gold Type, example: 916 Gold">
-  <input type="number" id="goldPrice" placeholder="Price per gram">
+  <input
+    type="text"
+    id="goldName"
+    placeholder="Gold Type"
+  >
 
-  <button onclick="saveGoldPrice()">Save Price</button>
+  <input
+    type="number"
+    id="goldPrice"
+    placeholder="Price Per Gram"
+  >
+
+  <button onclick="saveGoldPrice()">
+    Save Price
+  </button>
 
   <h3>Gold Price List</h3>
+
   <p id="priceList"></p>
 
   <a href="manager-dashboard.html">
     <button class="logout">Back</button>
   </a>
+
 </div>
 
 <script src="script.js"></script>

@@ -4,9 +4,11 @@
   <title>Manager Dashboard</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body onload="checkPermission('manager')">
 
 <div class="box">
+
   <h1>Manager Dashboard</h1>
 
   <a href="gold-type.html">
@@ -25,7 +27,13 @@
     <button>View All Transactions</button>
   </a>
 
-  <button class="logout" onclick="logout()">Logout</button>
+  <button
+    class="logout"
+    onclick="logout()"
+  >
+    Logout
+  </button>
+
 </div>
 
 <script src="script.js"></script>
